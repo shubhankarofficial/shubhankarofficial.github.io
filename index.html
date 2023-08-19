@@ -1,1 +1,224 @@
-Hello, world! This is my personal page hosted on GitHub pages.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shubhankar Garg</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+           <!-- <img src="images/logo.png" class="logo"> -->
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li> 
+                <li><a href="#about">About</a></li>
+                <!--<li><a href="#services">Services</a></li> -->
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Software Developer/Data Analyst</p>
+            <h1>Hi, I'm <span>Shubhankar Garg</span><br> from UC Davis</h1>
+        </div>
+    </div>
+</div>
+<!-- -----------about---------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Hello! I'm a Computer Science Master's student at UC Davis with a passion for software development, data analytics, and machine learning. Proficient in React, MongoDB, Node.js, HTML, CSS, and JavaScript, I love creating dynamic web applications.
+
+                    My focus on data analytics led me to master Python libraries like Pandas, Numpy, and Scikit Learn. I specialize in various machine learning algorithms and enjoy turning complex data into clear insights through visualization.
+                    
+                    Excited about the endless possibilities of technology, I'm committed to making a positive impact through innovation and collaboration.
+                    
+                    Let's connect and explore the world of tech together!</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Software Development</span><br>Developing Web Applications</li>
+                        <li><span>Data Analytics</span><br>Analyzing datasets and Applying Machine Learning for valuable insights</li>
+                        <li><span>Game Development</span><br> Developing Games making use of C# and softwares like Unity</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Apr 2023- Jul 2023</span><br>Teaching Assistant for Gameplay Programming</li>
+                        <li><span>Jul 2021- Oct 2021</span><br>Research Intern under Defence Organization, India</li>
+                        
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2022-Present</span><br> MS in Computer Science at UC Davis, USA</li>
+                        <li><span>2018-2022</span><br>BTECH in Computer Science at SRM University, India</li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ---------services---------------- -->
+<!--<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fas fa-code"></i>
+                <h2>Web Design</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nulla nibh, tincidunt sit amet sapien quis.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fas fa-crop-alt"></i>
+                <h2>UI/UX Design</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nulla nibh, tincidunt sit amet sapien quis.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fab fa-app-store"></i>
+                <h2>App Design</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nulla nibh, tincidunt sit amet sapien quis.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div> -->
+<!-- ----------portfolio------------ -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Sugar and Spice</h3>
+                    <p>An E- Commerce web application implented making use of MERN stack which allows you to reward yourself with a tasty treat.</p>
+                    <a href="https://github.com/shubhankarofficial/E-commerce-application"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>Roomie Roulette</h3>
+                    <p> An interactive computer-narrative based game created using RenPy and Cif. Have fun finding your ideal roomate. </p>
+                    <a href="https://github.com/Aryaman333/AI_Comp_story"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3> Hotel Booking Cancelled?</h3>
+                    <p> Prediction of hotel booking cancellation using machine learning models and data visualization</p>
+                    <a href="https://github.com/shubhankarofficial/Hotel-booking"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="https://github.com/shubhankarofficial" class="btn">See more</a>
+    </div>
+</div>
+<!-- ----------contact------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i> sbkgarg@ucdavis.edu</p>
+                <p><i class="fas fa-phone-square-alt"></i>(530)601-8279</p>
+                <div class="social-icons">
+                   <!-- <a href="https://facebook.com/"><i class="fab fa-facebook"></i></a>
+                    <a href=""><i class="fab fa-twitter-square"></i></a> -->
+                    <a href="https://www.instagram.com/vibes.with.shubhu__/"><i class="fab fa-instagram"></i></a> 
+                    <a href="https://www.linkedin.com/in/shubhankar-garg-717ba21b9/"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/shubhankarofficial">
+                        <i class="fab fa-github"></i>
+                      </a>
+                </div>
+                <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+   <!-- <div class="copyright">
+        <p>Copyright © Kevin. Made wtih <i class="fas fa-heart"></i> by <a href="https://www.youtube.com/channel/UCkjoHfkLEy7ZT4bA2myJ8xA?sub_confirmation=1">Easy Tutorials</a></p>
+    </div> -->
+</div>
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzX12GjQyfCWvjaayJelZaUa46cpp-x3qkUwTy54RknhIK87zBR9lOkXPKuk9Tp8u3U/exec' // add your own app script link here
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
